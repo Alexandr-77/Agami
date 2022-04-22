@@ -1,0 +1,35 @@
+:root {
+   --color-f: #ffffff;
+   --color-blu: #0057B1;
+   --color-blus: #4E9AEA;
+   --color-bfon: #BBDEF7;
+   --color-blusa: #E7F3FC;
+   --color-gr: #454545;
+   --color-grs: #C4C4C4;
+   --color-gra: #F5F5F5;
+}
+
+/* ======= Глобальные классы ======= */
+
+.--max-text {
+   font-weight: 600;
+   font-size: 45px;
+   line-height: 122%;
+}
+.--title {
+   font-weight: 600;
+   font-size: 30px;
+   line-height: 133%;
+}
+.--subtitle {
+   font-weight: 600;
+   font-size: 20px;
+   line-height: 175%;   
+}
+.--small-text {
+   font-weight: 400;
+   font-size: 15px;
+   line-height: 165%;   
+}
+
+/* ======= Глобальные классы / ======= */
