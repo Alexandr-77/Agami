@@ -624,6 +624,45 @@ a {
 
 /* ========= slider / ======== */
 
+/* ========= doctors ======== */
+.doctors {
+    padding: 60px 0;
+}
+.doctors__grup-btn {
+    margin: 40px 0 20px;
+}
+.doctors__btn {
+    padding: 13px 40px;
+    background: var(--color-blusa);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    margin: 0 20px 20px 0;
+    font-weight: 600;
+}
+.doctors__btn-active {
+    background: var(--color-blu);
+    color: var(--color-f);
+}
+.doctors__box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px 20px;
+}
+.doctors__box-item {
+    width: 255px;
+}
+.doctors__item-image {
+    margin-bottom: 40px;
+}
+.doctors__subtitle {
+    color: var(--color-blu);
+    margin-bottom: 20px;
+}
+
+/* ========= doctors/ ======== */
+
 
 
 
@@ -679,7 +718,7 @@ a {
         display: flex;
         position: fixed;
         top: 0;
-        z-index: 2;
+        z-index: 3;
         width: 100%;
     }
     .header__block-main {
@@ -832,6 +871,9 @@ a {
 @media (max-width: 510px) {
     .header__block-nav {
         width: 100%;
+        top: 0;
+        overflow-y: scroll;
+        height: 100vh;
     }
     .header__logo {
         display: none;
@@ -987,6 +1029,31 @@ a {
     .slider__item-text {
         padding: 25px 20px;
     }
+    .technology__title {
+        text-align: center;
+    }
+    .doctors__grup-btn {
+        margin: 40px 0 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    .doctors__box {
+        gap: 0;
+    }
+    .doctors__box-item {
+        width: 255px;
+        margin-bottom: 50px;
+    }
+    .doctors__item-image {
+        margin-bottom: 15px;
+    }
+    .doctors__subtitle {
+        margin-bottom: 10px;
+        text-align: center;
+    }
+    .doctors__text{
+        text-align: center;
+    }
 }
 /* ====== Медиа 510px ====== */
 
@@ -1000,6 +1067,7 @@ a {
     .slick-prev, .slick-next {
         top: 12%;
     }
+
 }
 /* ====== Медиа 400px ====== */
 

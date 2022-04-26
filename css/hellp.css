@@ -29,7 +29,8 @@
 .--small-text {
    font-weight: 400;
    font-size: 15px;
-   line-height: 165%;   
+   line-height: 165%;  
+   color: var(--color-gr); 
 }
 
 /* ======= Глобальные классы / ======= */
