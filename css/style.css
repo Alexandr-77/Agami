@@ -65,12 +65,12 @@ a {
 .--subtitle {
     font-weight: 600;
     font-size: 20px;
-    line-height: 175%;   
+    line-height: 165%;   
 }
 .--small-text {
     font-weight: 400;
     font-size: 15px;
-    line-height: 25px;   
+    line-height: 165%;   
 }   
 /* ======= Глобальные классы / ======= */
 
@@ -652,6 +652,8 @@ a {
 }
 .doctors__box-item {
     width: 255px;
+    display: flex;
+    flex-direction: column;
 }
 .doctors__item-image {
     margin-bottom: 40px;
@@ -660,38 +662,210 @@ a {
     color: var(--color-blu);
     margin-bottom: 20px;
 }
-
 /* ========= doctors/ ======== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.galleri {
+/* ========= prase ======== */
+.prase {
+    padding: 60px 0;
+}
+.prase__wrap {
+    border-bottom: 1px solid var(--color-blu);
+    padding-bottom: 40px;
+}
+.prase__wrap:last-child {
+    border: none;
+}
+.prase__box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    gap: 0 25px;
+}
+.prase__box-item-2 {
+    min-width: 280px;
+
+}
+.prase__subtitle-1 {
+    color: var(--color-blu);
+}
+.prase__link {
+    display: flex;
+    align-items: center;
+    color: var(--color-blu);
+    margin-top: 5px;
+}
+.prase__link:hover {
+    color: var(--color-blus);
+}
+.prase__link img {
+    margin: 3px 0 0 5px;
+}
+.prase__list {
+    margin: 20px 0;
+    max-width: 550px;
+    padding-left: 20px;
+}
+.prase__list-li {
+    list-style-type: disc;
+    color: var(--color-blu);
+}
+.prase__list-li span {
+    color: var(--color-gr);
+    padding-left: 5px;
+}
+.prase__text {
+    padding-left: 28px;
+}
+/* ========= prase / ======== */
+
+/* ========= enroll ======== */
+.enroll {
+    padding: 60px 0;
+    background: var(--color-blu);
+}
+.enroll__title {
+    color: var(--color-f);
+}
+.enroll__box-form {
+    padding: 40px 0 20px;
+    display: flex;
     flex-wrap: wrap;
     gap: 20px;
+}
+.enroll__inp {
+    width: 250px;
+    height: 55px;
+    padding: 0 40px;
+    background: var(--color-f);
+    border-radius: 100px;
+    border: none;
+}
+.enroll__inp:focus {
+    outline: none;
+}
+.enroll__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 55px;
+    color: var(--color-f);
+    background: var(--color-blus);
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+ } 
+ .enroll__text {
+    color: var(--color-f);  
+ }
+/* ========= enroll/ ======== */
+
+/* ========= questions ======== */
+.questions {
+    padding: 60px 0 30px;
+    background: var(--color-blusa);
+}
+.questions__title {
+    margin-bottom: 40px;
+}
+.questions__box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    min-height: 70px;
+    background: var(--color-blu);
+    border-radius: 100px;
+    padding: 0 40px;
+    margin-bottom: 20px;
+    
+}
+.questions__box-subtitle {
+    color: var(--color-f);
+}
+.questions__box img {
+    width: 20px;
+}
+.questions__block {
+    display: none;
+    padding: 0 40px;
+}
+.questions__block--active {
+    display: block;
+    padding-bottom: 20px;
+}
+.questions__block-toptxt {
+    display: flex;
+    gap: 27px;
+    position: relative;
+    padding-top: 20px;
+    flex-wrap: wrap;
 
 }
-.galleri a {
-    display: inline-flex;
-    width: 300px;
+.questions__block-toptxt::before {
+    content: url(../img/questions/check.svg);
+    position: absolute;
+    top: 20px;
+    left: -28px;
+}
+.questions__toptxt {
+    width: 48%;
+}
+.questions__toptxt-100 {
+    width: 100%;
+}
+.questions__table {
+    width: 100%;
+    margin: 20px 0 40px;
+    overflow: hidden;
+    border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -ms-border-radius: 10px 10px 10px 10px;
+    -o-border-radius: 10px 10px 10px 10px;
+    /* border: 1px solid #A4B1BD; */
 
 }
+.questions__tr {
+    background: var(--color-f);
+    text-align: left;
+}
+
+.questions__th {
+    padding: 15px 20px;
+    background: var(--color-bfon);
+    width: 50%;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 165%;
+}
+.questions__td {
+    padding: 15px 20px; 
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 165%;
+    /* border: 1px solid #A4B1BD; */
+}
+/* ========= questions / ======== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* ====== Медиа 1300px ====== */
 @media (max-width: 1300px) {
@@ -844,6 +1018,27 @@ a {
         top: 18%;
         bottom: auto;
     }
+    .prase__box {
+        flex-direction: column;
+    }
+    .prase__box-item-2 {
+        min-width: 100%;
+        margin-top: 10px;
+    }
+    .doctors__box-item {
+        width: 48%;
+    }
+    .questions__block-toptxt {
+        gap: 0px;
+        flex-direction: column;
+    }
+    .questions__toptxt {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .questions__block {
+        padding: 0 20px;
+    }
 }
 /* ====== Медиа 768px / ====== */
 
@@ -862,6 +1057,12 @@ a {
     }
     .quality__small-text {
         width: 70%;
+    }
+    .questions__th {
+        font-size: 12px;
+    }
+    .questions__td {
+        font-size: 12px;
     }
 }
 /* ====== Медиа 650px / ====== */
@@ -1032,27 +1233,96 @@ a {
     .technology__title {
         text-align: center;
     }
+    .doctors {
+        padding: 35px 0 0;
+    }
     .doctors__grup-btn {
-        margin: 40px 0 20px;
+        margin: 15px 0 15px;
         display: flex;
         flex-direction: column;
     }
     .doctors__box {
-        gap: 0;
+        gap: 0 10px;
     }
     .doctors__box-item {
-        width: 255px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
+        flex: 0 0 48%;
     }
     .doctors__item-image {
         margin-bottom: 15px;
     }
     .doctors__subtitle {
         margin-bottom: 10px;
+        font-size: 18px;
+        line-height: 145%;
+    }
+    .doctors__text {
+        font-size: 12px;
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+    }
+    .doctors__btn {
+        margin: 0 0px 10px 0;
+        font-size: 12px;
+        padding: 8px 15px;
+    }
+    .prase {
+        padding: 15px 0 30px;
+    }
+    .enroll {
+        padding: 35px 0;
+    }
+    .enroll__title {
+        font-size: 7vw;
         text-align: center;
     }
-    .doctors__text{
-        text-align: center;
+    .enroll__box-form {
+        padding: 15px 0 20px;
+        gap: 0;
+    }
+    .enroll__inp {
+        width: 100%;
+        margin-bottom: 13px;
+        height: 45px;
+    }
+    .enroll__btn {
+        width: 100%;
+        height: 45px;
+    }
+    .questions {
+        padding: 35px 0;
+    }
+    .questions__container {
+        padding: 0;
+    }
+    .questions__title {
+        margin-bottom: 20px;
+        padding: 0 20px;
+    }
+    .questions__block-toptxt::before {
+        content: none;
+    }
+    .questions__box {
+        gap: 0;
+        padding: 13px 20px;
+        margin-bottom: 10px;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+    }
+    .questions__block {
+        padding: 0 20px;
+        margin-bottom: 10px;
+    }
+    .questions__box-subtitle {
+        margin-right: 20px;
+        font-size: 15px;
+    }
+    .questions__block-toptxt {
+        padding-top: 10px;
     }
 }
 /* ====== Медиа 510px ====== */
@@ -1067,7 +1337,25 @@ a {
     .slick-prev, .slick-next {
         top: 12%;
     }
-
+    .prase__wrap {
+        padding-bottom: 15px;
+    }
+    .prase__box {
+        margin-top: 15px;
+    }
+    .questions__td {
+        padding: 10px 10px;
+    }
+    .questions__block-subtitle {
+        font-size: 5vw;
+        margin-top: 30px;
+    }
+    .questions__table {
+        margin: 20px 0 20px;
+    }
+    .questions__toptxt {
+        font-size: 14px;
+    }
 }
 /* ====== Медиа 400px ====== */
 
@@ -1079,6 +1367,9 @@ a {
     }
     .slick-prev, .slick-next {
         top: 11%;
+    }
+    .doctors__subtitle {
+        font-size: 16px;
     }
 }
 /* ====== Медиа 350px /====== */

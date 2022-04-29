@@ -50,3 +50,14 @@ let modernShow = document.querySelector('.modern__show');
 modernSpan.addEventListener('click', function() {
   modernShow.classList.toggle('modern__show--active');
 });
+
+// ================== accardion =====================
+let accord = document.querySelectorAll('.questions__wrap');
+let accordOpen = document.querySelectorAll('.questions__block');
+
+
+for (let i = 0; i < accord.length; i++) {
+  accord[i].addEventListener('click', function() {
+    accordOpen[i].classList.toggle('questions__block--active');
+  });
+}
